@@ -5,7 +5,7 @@
   /* ====== Color ====== */
   --hue-color: 187;
   /* ====== HSL Color Mode ====== */
-  --skin-color: 	hsl(var(--hue-color), 100%, 42%);
+  --skin-color: hsl(var(--hue-color), 100%, 42%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 85%);
   --body-color: hsl(var(--hue-color), 19%, 5%);
@@ -647,6 +647,16 @@ input {
 }
 .details_info li a {
   text-transform: lowercase;
+  color: var(--skin-color);
+}
+.pagination {
+  letter-spacing: 10px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
   color: var(--skin-color);
 }
 /* Services Section */
