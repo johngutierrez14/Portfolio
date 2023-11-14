@@ -1,7 +1,7 @@
 const itemsPerPage = 3;
 const workData = [
   {
-    filter: "app",
+    filter: "web",
     imgSrc: "assets/img/work-1.PNG",
     title: "COTA - CONSTRUCCIONES Y TALLER DE ARQUITECTURA S.A.S",
     category: "Innovación en Diseño y Construcción",
@@ -12,6 +12,30 @@ const workData = [
     role: "frontend",
     viewLink: "https://cotasas.com/",
   },
+  {
+    filter: "dashboard",
+    imgSrc: "assets/img/Dahboard inputs.png",
+    title: "Dashboard operaciones logisticas",
+    category: "Visualizaciones con Power BI",
+    description:
+      "",
+    createdDate: "14 nov 2023",
+    services: "Power BI Desktop, Power Bi Services",
+    role: "Data Analyst",
+    viewLink: "",
+  },
+  {
+    filter: "web",
+    imgSrc: "assets/img/Logip.PNG",
+    title: "LOGISTICAS & PROCESOS DEL CARIBE S.A.S",
+    category: "Diseño de pagina web",
+    description: "Es un sitio web creado en WordPress",
+    createdDate: "14 nov 2023",
+    services: "WordPress,",
+    role: "Designer",
+    viewLink: "https://logip.co/",
+  },
+  
   // Puedes agregar más objetos de trabajo aquí si es necesario
 ];
 
