@@ -6,15 +6,16 @@ const workData = [
     title: "COTA - CONSTRUCCIONES Y TALLER DE ARQUITECTURA S.A.S",
     category: "Innovación en Diseño y Construcción",
     description:
-      "Profesionales experimentados en construcción y diseño de espacios comerciales. Transformamos entornos con creatividad y eficiencia desde 2023, creando oportunidades en la industria de la edificación.",
+      "Desarrollé una página web interactiva usando HTML para la estructura, CSS para el diseño responsivo, y JavaScript para agregar interactividad. Implementé un menú dinámico, una galería de imágenes con animaciones. Utilicé event listeners y manipulación del DOM para mejorar la experiencia del usuario, optimizando el rendimiento y asegurando la compatibilidad en dispositivos móviles.",
     createdDate: "9 sept 2023",
     services: "html css",
     role: "frontend",
     viewLink: "https://cotasas.com/",
+    viewName: "https://cotasas.com/"
   },
   {
     filter: "dashboard",
-    imgSrc: "assets/img/Dahboard inputs.png",
+    imgSrc: "assets/img/Portada Logistica.webp",
     title: "Dashboard operaciones logisticas",
     category: "Visualizaciones con Power BI",
     description:
@@ -23,6 +24,7 @@ const workData = [
     services: "Power BI Desktop, Power Bi Services",
     role: "Data Analyst",
     viewLink: "",
+    viewName: "Ver PDF",
   },
   {
     filter: "web",
@@ -34,8 +36,33 @@ const workData = [
     services: "WordPress,",
     role: "Designer",
     viewLink: "https://logip.co/",
+    viewName: "https://logip.co/",
   },
-  
+  {
+    filter: "dashboard",
+    imgSrc: "assets/img/Portada MIPRES.webp",
+    title: "Integración de MIPRES con Power BI",
+    category: "Dashboard",
+    description: "En el proyecto de integración de MIPRES con Power BI, me conecté al webservice de MIPRES utilizando la API REST para acceder a los datos de prescripción en formato JSON. Gestioné estos archivos, transformando y limpiando los datos con Power Query para estructurarlos correctamente y permitir un análisis eficiente. Luego, establecí la conexión de los datos gestionados con Power BI para automatizar la actualización y visualización. A partir de esto, creé una serie de KPI y métricas clave, incluyendo el número de prescripciones emitidas, la tasa de aprobación de tratamientos y los tiempos promedio de respuesta. Finalmente, desarrollé dashboards interactivos que permitieron a los equipos de gestión analizar los datos de manera visual y tomar decisiones informadas basadas en indicadores de rendimiento y cumplimiento, mejorando significativamente la gestión y el monitoreo de los procesos en MIPRES.",
+    createdDate: "agosto 2024",
+    services: "APIRest, Power BI, Power Query, Python",
+    role: "Developer",
+    viewLink: "assets/docs/Proyecto MIPRES.pdf",
+    viewName: "Ver PDF",
+  },
+  {
+    filter: "Aplicaciones",
+    imgSrc: "assets/img/AppLogip.png",
+    title: "App a",
+    category: "Appsheet",
+    description: "Desarrollé una aplicación a medida en AppSheet para Logip, enfocada en la gestión integral de servicios logísticos, recursos humanos y mantenimiento de equipos. La aplicación permite a los usuarios registrar y rastrear solicitudes de servicios logísticos, gestionar la asignación de personal y recursos, y programar el mantenimiento de equipos de manera eficiente.",
+    createdDate: "agosto 2023",
+    services: "Appsheet, Google Sheet, Power BI",
+    role: "Developer",
+    viewLink: "",
+    viewName: "Ver PDF",
+  },
+
   // Puedes agregar más objetos de trabajo aquí si es necesario
 ];
 
@@ -56,7 +83,7 @@ function createWorkElement(work) {
           <li>Created - <span>${work.createdDate}</span></li>
           <li>Services - <span>${work.services}</span></li>
           <li>Role - <span>${work.role}</span></li>
-          <li>View - <span><a href="${work.viewLink}">${work.viewLink}</a></span></li>
+          <li>View - <span><a href="${work.viewLink}" target="_blank">${work.viewName}</a></span></li>
         </ul>
       </div>
     `;
